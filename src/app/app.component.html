@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>onlineworld- Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/animations.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/animations.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/transformations.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+ <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html">vokarstep<span>.</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block ">
+        <ul>
+          <li class="active"><a [routerLink]="['/main']">Home</a></li>
+          <li><a [routerLink]="['/about']">Services</a></li>
+          
+          <li><a [routerLink]="['/product']">Products</a></li>
+          <li><a [routerLink]="['/team']">Team</a></li>
+          <li class="drop-down"><a href="">Softwares</a>
+            <ul>
+              <li class="drop-down"><a href="#">Games</a>
+              <ul>
+                <li><a href="#">Window</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Linux</a></li>
+                <li><a href="#">Android</a></li>
+              
+              </ul>
+            </li>
+              <li class="drop-down"><a href="#">Editing</a>
+                <ul>
+                  <li><a [routerLink]="['/list']">Window</a></li>
+                  <li><a href="#">Mac</a></li>
+                  <li><a href="#">Linux</a></li>
+                  <li><a href="#">Android</a></li>
+                
+                </ul>
+              </li>
+              <li class="drop-down"><a href="#">Animation</a>
+              <ul>
+                <li><a href="#">Window</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Linux</a></li>
+                <li><a href="#">Android</a></li>
+              
+              </ul>
+            </li>
+              <li class="drop-down"><a href="#">Code</a>
+              <ul>
+                <li><a href="#">Window</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Linux</a></li>
+                <li><a href="#">Android</a></li>
+              
+              </ul>
+            </li>
+            </ul>
+          </li>
+          <li><a [routerLink]="['/contact']">Contact Us</a></li>
+
+          <li class="get-started"><a  onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <i class="fa fa-user" aria-hidden="true" aria-setsize="2000px"></i>
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit"><a [routerLink]="['/product']">Login</a></button>
+        <div class="container">
+          <span>New user?
+         <a [routerLink]="['/login']">Signup</a></span>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+ 
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+ 
+</body>
+  </html>
+
+<router-outlet></router-outlet>
